@@ -1,7 +1,7 @@
 {% set name = "pytest-qt" %}
-{% set version = "1.11.0" %}
+{% set version = "2.0.0" %}
 {% set hash_type = "md5" %}
-{% set hash = "c1be9518ab1915e22f8b8a6710d31626" %}
+{% set hash = "d6c5159e1a4db8dff3f5e3baa463012f" %}
 
 package:
   name: {{ name }}
@@ -36,7 +36,7 @@ test:
 
 about:
   home: https://github.com/pytest-dev/pytest-qt
-  license: LGPL
+  license: MIT
   summary: pytest support for PyQt and PySide applications
 
 extra:
