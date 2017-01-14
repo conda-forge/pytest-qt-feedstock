@@ -28,7 +28,8 @@ requirements:
 
 test:
   requires:
-    - pyqt
+    # version currently supplied by conda-forge, we might want to test with a newer version
+    - pyqt 4.11.* 
     - pytest
   imports:
     - pytestqt
