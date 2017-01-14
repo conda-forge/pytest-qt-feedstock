@@ -11,6 +11,18 @@ Summary: pytest support for PyQt and PySide applications
 
 
 
+Current build status
+====================
+
+Linux: [![Circle CI](https://circleci.com/gh/conda-forge/pytest-qt-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/pytest-qt-feedstock)
+OSX: [![TravisCI](https://travis-ci.org/conda-forge/pytest-qt-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/pytest-qt-feedstock)
+Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/pytest-qt-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/pytest-qt-feedstock/branch/master)
+
+Current release info
+====================
+Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pytest-qt/badges/version.svg)](https://anaconda.org/conda-forge/pytest-qt)
+Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pytest-qt/badges/downloads.svg)](https://anaconda.org/conda-forge/pytest-qt)
+
 Installing pytest-qt
 ====================
 
@@ -31,7 +43,6 @@ It is possible to list all of the versions of `pytest-qt` available on your plat
 ```
 conda search pytest-qt --channel conda-forge
 ```
-
 
 
 About conda-forge
@@ -67,18 +78,6 @@ Terminology
 
 **conda-forge** - the place where the feedstock and smithy live and work to
                   produce the finished article (built conda distributions)
-
-Current build status
-====================
-
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/pytest-qt-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/pytest-qt-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/pytest-qt-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/pytest-qt-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/pytest-qt-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/pytest-qt-feedstock/branch/master)
-
-Current release info
-====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pytest-qt/badges/version.svg)](https://anaconda.org/conda-forge/pytest-qt)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pytest-qt/badges/downloads.svg)](https://anaconda.org/conda-forge/pytest-qt)
 
 
 Updating pytest-qt-feedstock
