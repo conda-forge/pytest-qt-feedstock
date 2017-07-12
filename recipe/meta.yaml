@@ -1,7 +1,7 @@
 {% set name = "pytest-qt" %}
-{% set version = "2.1.0" %}
+{% set version = "2.1.1" %}
 {% set hash_type = "sha256" %}
-{% set hash = "fe77d0506cb9ec86c1c3653362a2052ea4b389fd525baab9c36eefd80a06322f" %}
+{% set hash = "9bbba81f2d25519948d0cbed8d33f232f1b1a5667db813ef1273e3bfd0e2c910" %}
 
 package:
   name: {{ name }}
@@ -29,7 +29,7 @@ requirements:
 test:
   requires:
     # version currently supplied by conda-forge, we might want to test with a newer version
-    - pyqt 4.11.* 
+    - pyqt 4.11.*
     - pytest
   imports:
     - pytestqt
