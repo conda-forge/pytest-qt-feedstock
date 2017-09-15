@@ -42,6 +42,7 @@ about:
   license_file: LICENSE
   summary: pytest support for PyQt and PySide applications
   doc_url: http://pytest-qt.readthedocs.io/en/latest/
+  dev_url: https://github.com/pytest-dev/pytest-qt
 
 extra:
   recipe-maintainers:
