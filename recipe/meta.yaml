@@ -1,7 +1,7 @@
 {% set name = "pytest-qt" %}
-{% set version = "2.1.2" %}
+{% set version = "2.2.0" %}
 {% set hash_type = "sha256" %}
-{% set hash = "1f029b2aa1654f6b90fb7b2cbebd185cc1de7b792df6fdbb9af948b854a05ff7" %}
+{% set hash = "1199f9677a308e9856abc52d32582f507d6fe0f866cbd8f887aab57918d82616" %}
 
 package:
   name: {{ name }}
@@ -15,6 +15,7 @@ source:
 build:
   number: 0
   script: python setup.py install --single-version-externally-managed --record=record.txt
+  noarch: python
 
 requirements:
   build:
@@ -28,8 +29,7 @@ requirements:
 
 test:
   requires:
-    # version currently supplied by conda-forge, we might want to test with a newer version
-    - pyqt 4.11.*
+    - pyqt 5.*
     - pytest
   imports:
     - pytestqt
@@ -41,6 +41,7 @@ about:
   license: MIT
   license_file: LICENSE
   summary: pytest support for PyQt and PySide applications
+  doc_url: http://pytest-qt.readthedocs.io/en/latest/
 
 extra:
   recipe-maintainers:
