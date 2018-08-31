@@ -1,7 +1,7 @@
 {% set name = "pytest-qt" %}
-{% set version = "3.0.1" %}
+{% set version = "3.0.2" %}
 {% set hash_type = "sha256" %}
-{% set hash = "38d00b835ec0f3e8da345fc1c700360a2df1a1f182737936b4bd32feb9b7d6c1" %}
+{% set hash = "3d5232dd5209da8a9ee8fe9022262931a3ee6a61b246253344120514e03094f2" %}
 
 package:
   name: {{ name }}
