@@ -1,7 +1,6 @@
 {% set name = "pytest-qt" %}
-{% set version = "3.3.0" %}
-{% set hash_type = "sha256" %}
-{% set hash = "714b0bf86c5313413f2d300ac613515db3a1aef595051ab8ba2ffe619dbe8925" %}
+{% set version = "4.0.0" %}
+{% set hash = "45687ab906f4828eb73d9fca2369326970e4ae0addb7ec0767bf5e968d66b581" %}
 
 package:
   name: {{ name }}
@@ -10,7 +9,7 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/p/pytest-qt/pytest-qt-{{ version }}.tar.gz
-  {{ hash_type }}: {{ hash }}
+  sha256: {{ hash }}
 
 build:
   number: 0
@@ -18,13 +17,13 @@ build:
   noarch: python
 
 requirements:
-  build:
+  host:
     - pip
-    - python    
+    - python >=3.6
     - setuptools
     - setuptools_scm
   run:
-    - python
+    - python >=3.6
     - pytest
 
 test:
