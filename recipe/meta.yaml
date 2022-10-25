@@ -1,6 +1,6 @@
 {% set name = "pytest-qt" %}
-{% set version = "4.1.0" %}
-{% set hash = "027f3d3f5dd04af0530d846cf50fb858f719f7e87c2e4a1c686abd4e0f72172a" %}
+{% set version = "4.2.0" %}
+{% set hash = "00a17b586dd530b6d7a9399923a40489ca4a9a309719011175f55dc6b5dc8f41" %}
 
 package:
   name: {{ name }}
@@ -34,7 +34,7 @@ test:
     - pytestqt
   commands:
     - pytest --help
-  
+
 about:
   home: https://github.com/pytest-dev/pytest-qt
   license: MIT
