@@ -8,22 +8,22 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/p/pytest-qt/pytest-qt-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/p/pytest-qt/pytest-qt-{{ version }}.tar.gz
   sha256: {{ hash }}
 
 build:
-  number: 0
+  number: 1
   script: python -m pip install . --no-deps --ignore-installed
   noarch: python
 
 requirements:
   host:
     - pip
-    - python >=3.8
+    - python {{ python_min }}
     - setuptools
     - setuptools_scm
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - pytest
     - pluggy >=1.1
 
@@ -31,6 +31,7 @@ test:
   requires:
     - pyqt 5.*
     - pytest
+    - python {{ python_min }}
   imports:
     - pytestqt
   commands:
