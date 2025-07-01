@@ -1,6 +1,6 @@
 {% set name = "pytest-qt" %}
-{% set version = "4.4.0" %}
-{% set hash = "76896142a940a4285339008d6928a36d4be74afec7e634577e842c9cc5c56844" %}
+{% set version = "4.5.0" %}
+{% set hash = "51620e01c488f065d2036425cbc1cbcf8a6972295105fd285321eb47e66a319f" %}
 
 package:
   name: {{ name }}
@@ -8,11 +8,11 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.org/packages/source/p/pytest-qt/pytest-qt-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/p/pytest-qt/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
   sha256: {{ hash }}
 
 build:
-  number: 1
+  number: 0
   script: python -m pip install . --no-deps --ignore-installed
   noarch: python
 
